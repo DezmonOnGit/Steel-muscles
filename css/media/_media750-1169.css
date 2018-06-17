@@ -1,7 +1,0 @@
-@media (min-width: 750px) and (max-width: 1169px) {
-  .container {
-    width: 1170px; }
-  .main-menu {
-    display: none; }
-  .burger-menu {
-    display: block; } }
