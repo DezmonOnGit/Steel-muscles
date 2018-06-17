@@ -1,0 +1,20 @@
+.menu {
+  width: 595px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 48px 0 46px; }
+
+.menu a {
+  text-decoration: none;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black; }
+
+.menu a:hover {
+  color: #df1f1f; }

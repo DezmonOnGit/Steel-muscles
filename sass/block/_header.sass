@@ -1,0 +1,180 @@
+.menu
+	position: relative
+	display: flex
+
+.main-menu 
+	width: 595px
+	list-style-type: none
+	display: flex
+	justify-content: space-between
+	padding: 48px 0 46px
+	margin-right: 335px
+
+
+.main-menu a 
+	text-decoration: none
+	font-family: Montserrat, Arial, sans-serif
+	font-size: 16px
+	text-transform: uppercase
+	color: black
+
+.main-menu a:hover
+	color: #df1f1f
+
+.logo
+	width: 176px
+	height: 100px
+	background: url(../img/logo.jpg) no-repeat
+	position: absolute
+	top: 17px
+	left: 675px
+	z-index: 99
+
+.social ul
+	width: 275px
+	list-style-type: none
+	display: flex
+	justify-content: space-between
+	padding: 43px 0 42px
+	margin-right: 155px
+
+.social a
+	text-decoration: none
+	font-size: 20px
+	text-transform: uppercase
+	color: black
+
+.social a:hover
+	color: #df1f1f
+
+.main-menu__btn
+	display: block
+	text-decoration: none
+	font-family: Montserrat, Arial, sans-serif
+	font-size: 15px
+	color: #df1f1f
+	padding: 16px 30px
+	margin: 30px 0
+	border: 2px solid #df1f1f
+	border-radius: 28px
+	box-sizing: border-box
+
+.main-menu__btn:hover
+	background-color: #df1f1f
+	color: white
+
+.main-menu__btn:active
+	background-color: #f31818
+	color: white
+
+.line
+	width: 100%
+	border-bottom: 2px solid #ebebec
+
+.burger-menu
+	display: none
+
+.burger-menu > a
+	display: block
+	text-decoration: none
+	font-family: Montserrat, Arial, sans-serif
+	font-size: 16px
+	text-transform: uppercase
+	color: black
+	width: 175px
+	margin-top: 48px
+	margin-bottom: 46px
+	margin-left: 62px
+	margin-right: 445px
+
+.burger-menu > a:hover
+	color: #df1f1f
+
+.burger-menu input
+	display: none
+
+.burger-menu input:checked + .burger-link
+	display: block
+
+.burger-menu label
+	display: block
+	width: 20px
+	height: 12px
+	position: absolute
+	top: 48px
+	cursor: pointer
+
+.burger-btn__line
+	width: 100%
+	height: 2px
+	background-color: black
+	position: absolute
+	top: calc(50% - 1px)
+
+.burger-menu label:hover > .burger-btn__line
+	background-color: #df1f1f
+
+input:checked ~ label > .burger-btn__line
+	background-color: white
+
+input:checked ~ label:hover > .burger-btn__line
+	background-color: white
+
+.burger-btn__line:after,
+.burger-btn__line:before
+	content: ""
+	display: block
+	width: 20px
+	height: 2px
+	background-color: black
+	position: absolute
+
+.burger-btn__line:before
+	top: 5px
+
+label:hover > .burger-btn__line:before
+	background-color: #df1f1f
+
+input:checked ~ label > .burger-btn__line:before
+	transform: rotate(-45deg)
+	transform-origin: left center
+	width: 15px
+	transition: .3s
+
+.burger-btn__line:after
+	bottom: 5px
+
+label:hover > .burger-btn__line:after
+	background-color: #df1f1f
+
+input:checked ~ label > .burger-btn__line:after
+	transform: rotate(45deg)
+	transform-origin: left center
+	width: 15px
+	transition: .3s
+
+.burger-link
+	display: none
+	list-style-type: none
+	position: absolute
+	top: 45px
+	left: 30px
+	border: 2px solid #ebebec
+	border-bottom: none
+	box-shadow: 0 0 20px #ebebec
+
+.burger-link a
+	display: block
+	font-family: Montserrat, Arial, sans-serif
+	font-size: 16px
+	text-transform: uppercase
+	color: black
+	text-decoration: none
+	padding: 30px 130px
+	background-color: white
+	border-bottom: 2px solid #ebebec
+
+.burger-link a:hover
+	color: #df1f1f
+	cursor: pointer
+	box-shadow: inset 0 0 15px #ebebec

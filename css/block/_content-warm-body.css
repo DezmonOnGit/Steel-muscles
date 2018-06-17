@@ -1,0 +1,18 @@
+.content-warm-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.left-container {
+  width: 50%;
+  height: 100%; }
+
+.right-container {
+  width: 50%;
+  height: 100%; }
+
+.heading-text {
+  width: 690px;
+  height: 323px;
+  background: url(../img/warm-body-cold-mind.png); }
