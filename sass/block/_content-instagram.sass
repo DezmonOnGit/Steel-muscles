@@ -1,0 +1,159 @@
+.content-instagram
+	padding-top: 140px
+	position: relative
+	margin-bottom: 100px
+
+.content-instagram:before
+	content: ""
+	width: 0
+	height: 69%
+	margin-top: 295px
+	background-color: #df1f1f
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1
+	transition: width 2s ease-out
+
+.content-instagram:hover:before
+	width: 55%
+
+.content-instagram:after
+	content: ""
+	width: 220px
+	height: 2px
+	margin-top: 295px
+	background-color: #df1f1f
+	position: absolute
+	top: 590px
+	right: 0
+	z-index: 1
+
+
+.instagram-header
+	margin-bottom: 45px
+
+.instagram-title
+	display: block
+	width: 320px
+	font-family: "Montserrat", Arial, sans-serif
+	font-size: 32px
+	font-weight: bold
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 18px
+	text-decoration: none
+	color: black
+	margin: 0 auto
+
+.instagram-title:before
+	margin-right: 15px
+
+.instagram-title:hover
+	text-shadow: 0 0 1px rgba(0,0,0,.6)
+
+.instagram-description
+	display: block
+	font-family: "Proxima Nova", Arial, sans-serif
+	font-size: 16px
+	font-weight: bold
+	text-align: center
+	width: 137px
+	padding: 14px
+	margin: 0 auto
+	background-color: #f6f6f6
+	text-decoration: none
+	color: black
+
+.instagram-description:hover
+	background-color: rgb(240,240,240)
+
+.instagram-description_text-normal
+	font-weight: normal
+
+.photo-wrapper
+	display: flex
+	flex-wrap: wrap
+	padding: 47px 0 0
+	box-sizing: border-box
+	position: relative
+
+.photo-wrapper__item
+	display: block
+	width: 305px
+	height: 305px
+	margin-bottom: 18px
+	margin-right: 18px
+	position: relative
+	z-index: 999
+
+.photo-wrapper__item:nth-child(4n+4)
+	margin-right: 0
+
+.photo-wrapper__item:before
+	content: ""
+	display: none
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,0.6)
+
+.photo-wrapper__item:after
+	content: ""
+	display: none
+	width: 55px
+	height: 57px
+	background: url(../img/ic-search.png)
+	position: absolute
+	top: calc(50% - 28.5px)
+	left: calc(50% - 27.5px)
+
+.photo-wrapper__item:hover:before,
+.photo-wrapper__item:hover:after
+	display: block
+
+.photo-custom-item
+	background-color: white
+	padding: 75px 46px 63px 
+	box-sizing: border-box
+
+.photo-custom-item:after,
+.photo-custom-item:before
+	display: none
+
+.photo-custom-item:hover:before,
+.photo-custom-item:hover:after
+	display: none
+
+.photo-custom-item-title
+	font-family: "Proxima Nova", Arial, sans-serif	
+	font-size: 30px
+	text-align: center
+	margin-bottom: 55px
+	position: relative
+
+.photo-custom-item-btn
+	display: block
+	width: 216px
+	font-family: "Montserrat", Arial, sans-serif
+	font-size: 15px
+	padding: 14px 26px
+	border: 2px solid #df1f1f
+	border-radius: 35px
+	color: red
+	text-align: center
+	margin: 0 auto
+	box-sizing: border-box
+	text-decoration: none
+
+.photo-custom-item-btn:before
+	margin-right: 12px
+
+.photo-custom-item-btn:hover
+	background-color: #df1f1f
+	color: white
+
+.photo-custom-item-btn:active
+	background-color: #f31818
