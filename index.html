@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Steel muscles</title>
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -252,21 +253,33 @@
 					</div>
 				</div>
 				<div class="content-video-customers">
-						<div class="content-video-customers-header">Video testimonials from my customers</div>
+					<div class="content-video-customers-header">Video testimonials from my customers</div>
+					<div class="content-video-customers-slider owl-carousel">
+						<div class="content-video-customers-slider__item customer-alexey-vinnik">
+							<div class="content-video-customers-title_common content-video-customers-title_top-left">Alexey Vinnik</div>
+							<a class="content-video-customers-play" href=""></a>
+						</div>
+						<div class="content-video-customers-slider__item customer-mikhail-ranov">
+							<div class="content-video-customers-title_common content-video-customers-title_top-left">Mikhail Ranov</div>
+							<a class="content-video-customers-play" href=""></a>
+						</div>
+						<div class="content-video-customers-slider__item customer-dmitry-valov">
+							<div class="content-video-customers-title_common content-video-customers-title_top-left">Dmitry Valov</div>
+							<a class="content-video-customers-play" href=""></a>
+						</div>
+					</div>
 					<div class="container-320">	
-						<div class="content-video-customers-slider">
-							<div class="content-video-customers-slider__item customer-alexey-vinnik">
-								<div class="content-video-customers-title_common content-video-customers-title_left">Alexey Vinnik</div>
-								<a class="content-video-customers-play content-video-customers-play_display" href=""></a>
-							</div>
-							<div class="content-video-customers-slider__item customer-mikhail-ranov">
-								<div class="content-video-customers-title_active">Mikhail Ranov</div>
-								<a class="content-video-customers-play" href=""></a>
-							</div>
-							<div class="content-video-customers-slider__item customer-dmitry-valov">
-								<div class="content-video-customers-title_common content-video-customers-title_right">Dmitry Valov</div>
-								<a class="content-video-customers-play content-video-customers-play_display" href=""></a>
-							</div>
+						<div class="content-video-customers-slider__item customer-alexey-vinnik">
+							<div class="content-video-customers-title_common content-video-customers-title_top-left">Alexey Vinnik</div>
+							<a class="content-video-customers-play" href=""></a>
+						</div>
+						<div class="content-video-customers-slider__item customer-mikhail-ranov">
+							<div class="content-video-customers-title_common content-video-customers-title_top-left">Mikhail Ranov</div>
+							<a class="content-video-customers-play" href=""></a>
+						</div>
+						<div class="content-video-customers-slider__item customer-dmitry-valov">
+							<div class="content-video-customers-title_common content-video-customers-title_top-left">Dmitry Valov</div>
+							<a class="content-video-customers-play" href=""></a>
 						</div>
 					</div>
 				</div>
@@ -275,9 +288,13 @@
 						<div class="content-contact-me-header">Contact me</div>
 						<div class="content-contact-me-container">
 							<div class="content-contact-me-left">
-								<div class="content-contact-me-left__mail icon-mail">steelmuscles&#64;gmail.com</div>
-								<div class="content-contact-me-left__phone icon-phone">+1 350 824 2222</div>
-								<div class="content-contact-me-left__messengers">+25 (300) 400 3344</div>
+								<a class="content-contact-me-left__mail icon-mail" href="">steelmuscles&#64;gmail.com</a>
+								<a class="content-contact-me-left__phone icon-phone" href="">+1 350 824 2222</a>
+								<div class="content-contact-me-left__messengers">
+									<a class="content-contact-me-left__messengers__viber" href=""></a>
+									<a class="content-contact-me-left__messengers__telegram" href=""></a>
+									<div class="content-contact-me-left__messengers__phone">+25 (300) 400 3344</div>
+								</div>
 								<div class="social content-contact-me-social">
 									<ul>
 										<li>
@@ -305,10 +322,18 @@
 							</div>
 							<div class="content-contact-me-right">
 								<form>
-									<input class="content-contact-me-input content-contact-me-input__usr-name" type="text" name="usr-name" placeholder="Name">
-									<label class="content-contact-me-input-title" for="usr-mail">Email address</label>
-									<input id="usr-mail" class="content-contact-me-input content-contact-me-input__usr-mail" type="email" name="usr-mail" placeholder="steelmuscles@gmail.com">
-									<input class="content-contact-me-input content-contact-me-input__usr-message" type="text" name="usr-message" placeholder="Message">
+									<div class="content-contact-me-right__item">
+										<input id="usr-name" class="content-contact-me-input content-contact-me-input__usr-name" type="text" name="usr-name">
+										<label for="usr-name" class="content-contact-me-label content-contact-me-label__usr-name">Name</label>
+									</div>
+									<div class="content-contact-me-right__item">
+										<input id="usr-mail" class="content-contact-me-input content-contact-me-input__usr-mail" type="email" name="usr-mail">
+										<label class="content-contact-me-label content-contact-me-label__usr-mail" for="usr-mail">Email address</label>
+									</div>
+									<div class="content-contact-me-right__item">
+										<input id="usr-message" class="content-contact-me-input content-contact-me-input__usr-message" type="text" name="usr-message">
+										<label for="usr-message" class="content-contact-me-label content-contact-me-label__usr-message">Message</label>
+									</div>
 									<button class="content-contact-me-btn" type="submit">Submit</button>
 								</form>
 							</div>
@@ -323,5 +348,8 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>

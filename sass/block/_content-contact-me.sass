@@ -19,6 +19,7 @@
 	margin-right: 255px
 
 .content-contact-me-left__mail
+	display: block
 	width: 365px
 	font-family: "Proxima Nova", Arial, sans-serif
 	font-size: 32px
@@ -27,6 +28,9 @@
 	position: relative
 	margin-left: 60px
 	margin-bottom: 32px
+	text-decoration: none
+	color: black
+	transition: color, .2s
 
 .content-contact-me-left__mail:before
 	position: absolute
@@ -34,13 +38,20 @@
 	left: -60px
 	color: #df1f1f
 
+.content-contact-me-left__mail:hover
+	color: #df1f1f
+
 .content-contact-me-left__phone
+	display: block
 	font-family: "Proxima Nova", Arial, sans-serif
 	font-size: 32px
 	font-weight: bold
 	position: relative
 	margin-left: 60px
 	margin-bottom: 32px
+	text-decoration: none
+	color: black
+	transition: color, .2s
 
 .content-contact-me-left__phone:before
 	position: absolute
@@ -49,26 +60,56 @@
 	color: #df1f1f
 	font-size: 28px
 
+.content-contact-me-left__phone:hover
+	color: #df1f1f
+
 .content-contact-me-left__messengers
 	width: 222px
 	box-sizing: border-box
+	margin-left: 94px
+	margin-bottom: 45px
+	position: relative
+
+.content-contact-me-left__messengers__viber
+	width: 47px
+	height: 47px
+	background: url(../img/viber.png)
+	position: absolute
+	top: 0
+	left: -94px
+	cursor: pointer
+	z-index: 3
+	transition-property: scale, box-shadow
+	transition-duration: .2s
+
+.content-contact-me-left__messengers__viber:hover
+	transform: scale(1.1,1.1)
+	box-shadow: 0 0 3px #7d3daf
+	z-index: 99
+
+.content-contact-me-left__messengers__telegram
+	width: 47px
+	height: 47px
+	background: url(../img/telegram.png)
+	position: absolute
+	top: 0
+	left: -47px
+	cursor: pointer
+	z-index: 3
+	transition-property: scale, box-shadow
+	transition-duration: .2s
+
+.content-contact-me-left__messengers__telegram:hover
+	transform: scale(1.1,1.1)
+	box-shadow: 0 0 3px #61a8de
+	z-index: 99
+
+.content-contact-me-left__messengers__phone
 	font-family: "Proxima Nova Semi", Arial, sans-serif
 	font-size: 20px
 	font-weight: bold
 	padding: 12px 20px
 	background-color: #f4f4f4
-	margin-left: 94px
-	margin-bottom: 45px
-	position: relative
-
-.content-contact-me-left__messengers:before
-	content: ""
-	width: 94px
-	height: 47px
-	background: url(../img/contact-me-messengers-img.jpg)
-	position: absolute
-	top: 0
-	left: -94px
 
 .content-contact-me-social
 	position: relative
@@ -88,7 +129,6 @@
 	display: flex
 	flex-direction: column
 	justify-content: center
-	border-right: 1px solid #e7e7e7
 	box-sizing: border-box
 
 .content-contact-me-social li:last-child
@@ -115,6 +155,9 @@
 	text-align: center
 	color: #939393
 
+.content-contact-me-right__item
+	position: relative
+
 .content-contact-me-input
 	display: block
 	width: 360px
@@ -126,28 +169,49 @@
 	font-size: 20px
 	font-weight: bold
 	color: black
+	position: relative
+	z-index: 99
+	background-color: transparent
 
-.content-contact-me-input::-webkit-input-placeholder
+.content-contact-me-label
+	display: block
 	font-family: "Proxima Nova", Arial, sans-serif
-	font-size: 20px
 	font-weight: bold
-	color: black
+	font-size: 20px
+	margin-bottom: 15px
+	position: absolute
+	top: 0
+	z-index: 3
+	transition-property: color, top, font-size
+	transition-duration: .2s
 
 .content-contact-me-input__usr-name
 	margin-bottom: 47px
-
-.content-contact-me-input-title
-	display: block
-	font-family: "Proxima Nova", Arial, sans-serif
-	font-size: 13px
-	color: #838383
-	margin-bottom: 15px
 
 .content-contact-me-input__usr-mail
 	margin-bottom: 63px
 
 .content-contact-me-input__usr-message
 	margin-bottom: 55px
+
+.content-contact-me-input__usr-name:focus + .content-contact-me-label__usr-name
+	color: #838383
+	top: -14px
+	font-size: 13px
+	font-weight: normal
+
+.content-contact-me-input__usr-mail:focus + .content-contact-me-label__usr-mail
+	color: #838383
+	top: -14px
+	font-size: 13px
+	font-weight: normal
+
+.content-contact-me-input__usr-message:focus + .content-contact-me-label__usr-message
+	color: #838383
+	top: -14px
+	font-size: 13px
+	font-weight: normal
+	
 
 .content-contact-me-btn
 	font-family: "Montserrat", Arial, sans-serif
@@ -159,8 +223,9 @@
 	background-color: white
 	outline: none
 	cursor: pointer
+	transition-property: background-color, color
+	transition-duration: .2s
 
 .content-contact-me-btn:hover
 	background-color: #df1f1f
 	color: white
-

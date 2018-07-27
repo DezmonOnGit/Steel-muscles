@@ -15,25 +15,48 @@
 		top: calc(50% - 40px)
 		left: calc(50% - 40px)
 
+	.content-video-customers-slider:before, 
+	.content-video-customers-slider:after
+		width: 150px
+
 @media (min-width: 750px) and (max-width: 1169px)
 	.content-video-customers-header
 		font-size: 26px
 
-	.content-video-customers-slider__item
-		width: 30%
-		margin-right: 0
-
 	.customer-alexey-vinnik
-		display: none
+		background-position: center
 
 	.customer-mikhail-ranov
-		width: 70%
+		background-position: center
+
+	.customer-dmitry-valov
+		background-position: center
 
 	.content-video-customers-title_common
 		font-size: 40px
 
+	.content-video-customers-slider:after
+		right: 225px
+
+	.content-video-customers-slider:before
+		left: 225px
+
+	.content-video-customers-slider:before,
+	.content-video-customers-slider:after
+		width: 100px
+
+	.owl-next
+		right: 170px
+
+	.owl-prev
+		left: 170px
+
 @media (min-width: 320px) and (max-width: 749px)
+	.owl-carousel.owl-loaded
+		display: none
+
 	.container-320
+		display: block
 		width: 320px
 		margin: 0 auto
 
@@ -115,3 +138,7 @@
 
 	.content-video-customers-play_display
 		display: block
+
+	.content-video-customers-slider:before, 
+	.content-video-customers-slider:after
+		display: none
