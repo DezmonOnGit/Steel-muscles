@@ -312,7 +312,7 @@ template, [hidden] {
   background-color: #f31818;
   color: white; }
 
-.line {
+.header-line {
   width: 100%;
   border-bottom: 2px solid #ebebec; }
 
