@@ -11,4 +11,8 @@ $(document).ready(function(){
 	    }, 500);
 	    return false;
 	});
+	$('.dummy').viewportChecker({
+	    classToAdd: 'content-instagram-bg-animation_active', // Class to add to the elements when they are visible,
+	    repeat: true, // Add the possibility to remove the class if the elements are not visible
+	});
 });
